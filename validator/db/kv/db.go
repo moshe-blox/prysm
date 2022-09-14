@@ -25,7 +25,7 @@ const (
 	// to the max number of keys per validator client, but there is no
 	// detriment if there are more keys than this capacity, as attestations
 	// for those keys will simply be flushed at the next flush interval.
-	attestationBatchCapacity = 2048
+	attestationBatchCapacity = 1
 	// Time interval after which we flush attestation records to the database
 	// from a batch kept in memory for slashing protection.
 	attestationBatchWriteInterval = time.Millisecond * 100
